@@ -1,32 +1,36 @@
 # Tenda Router Configuration Automation
 
-This project contains a Python script that automates the configuration of Tenda routers using Selenium for browser automation. The script can log in to the router's admin panel and modify WiFi settings such as SSID and password.
-
-## Table of Contents
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
-## Features
-- Automatically log in to the Tenda router admin page.
-- Change the WiFi network SSID and password.
-- Browser automation using Selenium and ChromeDriver.
+This project contains a Python script to automatically configure Tenda routers using Selenium for browser automation.
 
 ## Requirements
 
-Before running the script, ensure you have the following installed:
-
 - Python 3.x
-- [Selenium](https://www.selenium.dev/)
-- [ChromeDriver](https://sites.google.com/chromium.org/driver/) (compatible with your version of Google Chrome)
+- Selenium WebDriver
+- ChromeDriver
 
-### Python Packages
-To install the required Python packages, run:
+### Installation
 
-```bash
-pip install selenium
+1. Install the required Python packages:
 
+    ```bash
+    pip install selenium
+    ```
+
+2. Download and install [ChromeDriver](https://sites.google.com/chromium.org/driver/).
+
+### Usage
+
+1. Edit the `router_config.py` file with your router's IP, WiFi SSID, and password.
+2. Run the script:
+
+    ```bash
+    python router_config.py
+    ```
+
+The script will automatically log into the Tenda router admin page and configure the WiFi settings.
+
+---
+
+### Example
+
+To configure a Tenda router with IP `192.168.0.1`, SSID `MyTendaNetwork`, and password `mySecurePassword`, simply edit the script and run it.
